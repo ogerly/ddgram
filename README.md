@@ -54,7 +54,7 @@ lege im root-verzeichnis eine datei an '.env'
 ### Telegram Bot anlegen
 
 Stellen Sie über den Link eine Verbindung zum @BotFather her: https://telegram.me/BotFather. Wenn das Chat-Fenster mit dem Bot im Telegramm geöffnet ist, drücken Sie die Taste Start. 
-     - /newbot 
+     **/newbot** 
      und folge den anweisungen, am ende bekommst du den  BOT_TOKEN 
 
 trage nun BOT_TOKEN und BOT_NAME in die  **.env** datei. 
@@ -62,13 +62,15 @@ trage nun BOT_TOKEN und BOT_NAME in die  **.env** datei.
 ### Firebase Hosting und Database anlegen 
 
 auf der console bei firebase https://console.firebase.google.com/
-     - lege ein neues Projekt an
-     - lege eine neue database an
-     - lege ein neues hosting an 
+- lege ein neues Projekt an
+- lege eine neue database an
+- lege ein neues hosting an 
+     
 trage nun FIREBASE_APIKEY, IREBASE_AUTH_DOMAIN , FIREBASE_DATABASE_URL, FIREBASE_PROJECT_ID, FIREBASE_STORAGE_BUCKET, FIREBASE_MESSANGER_ID ein. 
 
 
-starten der anwendung und des telegrambots 
-     $ npm start
+## starten der anwendung und des telegrambots 
+   
+      $ npm start
      
-     - du kannst deinen bot bei telegram mit **/start** aufrufen
+ - du kannst deinen bot bei telegram mit **/start** aufrufen
