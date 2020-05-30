@@ -1,4 +1,4 @@
-# ddgram (WIP)
+# ddgram [WIP] - Dieses Projekt dient zu lernzwecken - Nutzung auf eingene Gefahr !
 ### telegramBot + Webapp + Hosting + Database
     nodejs, express, pug, i18n, telegramAPI, firebase(Hosteing, Database)
 
