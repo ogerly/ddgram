@@ -1,28 +1,28 @@
-#ddgram
-#telegramBot + Webapp + Hosting + Database
-nodejs, express, pug, i18n, telegramAPI, firebase(Hosteing, Database)
+# ddgram
+### telegramBot + Webapp + Hosting + Database
+    nodejs, express, pug, i18n, telegramAPI, firebase(Hosteing, Database)
 
 
 
-###node,express,pug,i18n,gulp
+### node,express,pug,i18n,gulp
 eine schnelle anwendung. wichtig ist das zusammenspiel der technik und systeme. 
-- schnelle einfaches handling über telegram, datendarstellung per webapp. 
-- bot steuerung für admin von gruppen und kanälen
-- bot steuerung für informationssuchende
-- datendarstellung für themenbezogenen oder localen informationen.  
+     - schnelle einfaches handling über telegram, datendarstellung per webapp. 
+     - bot steuerung für admin von gruppen und kanälen
+     - bot steuerung für informationssuchende
+     - datendarstellung für themenbezogenen oder localen informationen.  
 
-###TelegramBot
- - bot login
- - bot commands
- - data admin, user speichern
- - data admin, user verwalten
+### TelegramBot
+    - bot login
+    - bot commands
+    - data admin, user speichern
+    - data admin, user verwalten
 
- ###Webapp
-  - login per telegram
-  - daten verwalten
-  - daten speichern
+ ### Webapp
+    - login per telegram
+    - daten verwalten
+    - daten speichern
 
-###.env
+### .env
 
 lege im root-verzeichnis eine datei an '.env'
 
