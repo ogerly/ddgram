@@ -1,5 +1,5 @@
-# ddgram [WIP] - Dieses Projekt dient zu lernzwecken - Nutzung auf eingene Gefahr !
-### telegramBot + Webapp + Hosting + Database
+# ddgram [WIP] - dieses projekt dient zu lernzwecken - nutzung auf eingene gefahr !
+### TelegramBot + Webapp
     node(express, pug, gulp, i18n, telegram(api), telegraf(botframework), firebase(hosting, database))
 
 
