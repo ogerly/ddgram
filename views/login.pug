@@ -1,0 +1,17 @@
+include includes/head.pug
+title !{title}
+body
+  include includes/navbar.pug 
+  .container
+  form.form-signin.container
+    h2.form-signin-heading Anmelden
+    input.input-block-level(type='text', placeholder='Email address')
+    br
+    input.input-block-level(type='password', placeholder='Password')
+    br
+    label.checkbox
+      input(type='checkbox', value='remember-me')
+      | merken
+    br
+    button.btn.btn-large.btn-primary(type='submit') Login
+  include includes/footer.pug

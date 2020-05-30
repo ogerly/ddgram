@@ -1,0 +1,15 @@
+doctype html
+html
+	include includes/head.pug
+	title !{title}
+	body
+		include includes/navbar.pug
+		div.container Hallo !{username}
+		br
+		br
+		br
+		div#load
+		br
+		include includes/footer.pug
+script 	document.ready(function(){ 	alert('index.js') 	}) 
+  

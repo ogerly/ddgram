@@ -1,0 +1,37 @@
+{
+  "name": "ddgram",
+  "version": "1.0.0",
+  "description": "Dresden benutzt Telegram",
+  "main": "index.js",
+  "author": "ogerly",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve --only functions",
+    "start": "nodemon index.js ",
+    "stop": "killall node ",
+    "logs": "firebase functions:log",
+    "build": "gulp pug"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "firebase": "^7.14.4",
+    "node-telegram-bot-api": "^0.50.0",
+    "nodemon": "^2.0.4",
+    "open-graph-scraper": "^3.6.2",
+    "pug": "^3.0.0",
+    "telegraf": "^3.38.0",
+    "telegraf-i18n": "^6.6.0",
+    "telegraf-inline-menu": "^5.0.0-beta.4",
+    "telegram-format": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^4.0.1"
+  }
+}
