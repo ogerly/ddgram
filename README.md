@@ -1,6 +1,6 @@
 # ddgram [WIP] - Dieses Projekt dient zu lernzwecken - Nutzung auf eingene Gefahr !
 ### telegramBot + Webapp + Hosting + Database
-    nodejs, express, pug, i18n, telegramAPI, firebase(Hosteing, Database)
+    node(express, pug, gulp, i18n, telegram(api), telegraf(botframework), firebase(hosteing, database))
 
 
 
@@ -74,3 +74,12 @@ trage nun FIREBASE_APIKEY, IREBASE_AUTH_DOMAIN , FIREBASE_DATABASE_URL, FIREBASE
       $ npm start
      
  - du kannst deinen bot bei telegram mit **/start** aufrufen
+ 
+ 
+ # in kürze mehr über:
+
+    - pug & gulp (build)
+    - i18n
+    - firebase, firebase init & deploy
+    - telegram api
+    - telegraf botframework
