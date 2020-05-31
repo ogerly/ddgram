@@ -4,6 +4,7 @@ const path = require("path");
 const { Telegraf } = require('telegraf')
 const pug = require('pug')
 const firebase = require('firebase')
+
  
  
 
@@ -45,13 +46,19 @@ app.get('/login', (req, res) => {
     username: "Jon Doe"
   });
 });
-  app.get('/settings', (req, res) => {
+app.get('/settings', (req, res) => {
     res.render("settings", {
       title: "Einstellungen",
       username: "Jon Doe",
       anyArray: ['kanal1','kanal2','kanal3','kanal4','kanal5'],
       anyGroupArray: ['gruppe1','gruppe2','gruppe3','gruppe4','gruppe5']
     });
+});
+app.get('/docu', (req, res) => {
+  res.render("docu", {
+    title: "Dokumentation",
+    username: "Jon Doe"
+  });
 });
 /*
 app.get('/index', function(req, res) {

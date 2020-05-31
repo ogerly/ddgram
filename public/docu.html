@@ -1,0 +1,110 @@
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="/public/css/style.css"/>
+  <style ./public/css/style.css="./public/css/style.css"></style><script defer src="/__/firebase/7.14.5/firebase-app.js"></script>
+<script defer src="/__/firebase/7.14.5/firebase-auth.js"></script>
+<script defer src="/__/firebase/7.14.5/firebase-database.js"></script>
+<script defer src="/__/firebase/7.14.5/firebase-messaging.js"></script>
+<script defer src="/__/firebase/7.14.5/firebase-storage.js"></script>
+<script defer src="/__/firebase/init.js"></script>
+</head>
+<title></title>
+<body class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"><a class="navbar-brand" href="/"> DDgram @</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"><a class="nav-link" href="/">Home      </a></li>
+      </ul>
+      <ul class="navbar-nav float-right">
+        <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accounts</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="/docu">Documentation</a><a class="dropdown-item" href="/settings">Settings</a></div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <h3></h3>
+  <hr/>
+  <!--  extends layout.pug -->
+  <!--  block content -->
+  <html>
+    <head></head>
+    <body>
+      <h1 id="ddgram-wip---dieses-projekt-dient-zu-lernzwecken---nutzung-auf-eingene-gefahr-">ddgram [WIP] - Dieses Projekt dient zu lernzwecken - Nutzung auf eingene Gefahr !</h1>
+      <h3 id="telegrambot--webapp--hosting--database">telegramBot + Webapp + Hosting + Database</h3>
+      <pre><code>node(express, pug, gulp, i18n, telegram(api), telegraf(botframework), firebase(hosting, database))</code></pre>
+      <h3 id="nodeexpresspugi18ngulp">node,express,pug,i18n,gulp</h3>
+      <p>eine schnelle anwendung. wichtig ist das zusammenspiel der technik und systeme. - schnelle einfaches handling über telegram, datendarstellung per webapp. - bot steuerung für admin von gruppen und kanälen - bot steuerung für informationssuchende - datendarstellung für themenbezogenen oder localen informationen.</p>
+      <h3 id="telegrambot">TelegramBot</h3>
+      <pre><code>- bot login
+- bot commands
+- data admin, user speichern
+- data admin, user verwalten</code></pre>
+      <h3 id="webapp">Webapp</h3>
+      <pre><code>- login per telegram
+- daten verwalten
+- daten speichern</code></pre>
+      <h2 id="install">Install</h2>
+      <pre><code>$ git clone https://github.com/ogerly/ddgram.git
+$ cd <neuer projectordner>
+$ npm install</code></pre>
+      <h3 id="env">.env</h3>
+      <p>lege im root-verzeichnis eine datei an '.env'</p>
+      <pre><code>NODE_ENV=development
+PORT= 3000
+
+BOT_NAME= <Name deines Telegrambots - ohne @>
+BOT_TOKEN = <dein Telegram Bot Token>
+
+FIREBASE_APIKEY = < Firebase ApiKey >
+FIREBASE_AUTH_DOMAIN = https://< Firebase projectid >.firebaseapp.com/
+FIREBASE_DATABASE_URL = https://< Firebase projectid >.firebaseapp.com/
+FIREBASE_PROJECT_ID = < Firebase projectid >
+FIREBASE_STORAGE_BUCKET = < Firebase projectid >.appspot.com
+FIREBASE_MESSANGER_ID = < Firebase Messanger id ></code></pre>
+      <h3 id="telegram-bot-anlegen">Telegram Bot anlegen</h3>
+      <p>Stellen Sie über den Link eine Verbindung zum @BotFather her: <a href="https://telegram.me/BotFather">https://telegram.me/BotFather</a>. Wenn das Chat-Fenster mit dem Bot im Telegramm geöffnet ist, drücken Sie die Taste Start.<strong>/newbot</strong> </p>
+    </body>
+  </html>
+  <und>folge den anweisungen, am ende bekommst du den BOT_TOKEN
+    <p>trage nun BOT_TOKEN und BOT_NAME in die <strong>.env</strong> datei.</p>
+    <h3 id="firebase-hosting-und-database-anlegen">Firebase Hosting und Database anlegen</h3>
+    <p>auf der console bei firebase <a href="https://console.firebase.google.com/">https://console.firebase.google.com/</a></p>
+    <ul>
+      <li>lege ein neues Projekt an</li>
+      <li>lege eine neue database an</li>
+      <li>lege ein neues hosting an</li>
+    </ul>
+    <p>trage nun FIREBASE_APIKEY, IREBASE_AUTH_DOMAIN , FIREBASE_DATABASE_URL, FIREBASE_PROJECT_ID, FIREBASE_STORAGE_BUCKET, FIREBASE_MESSANGER_ID ein.</p>
+    <h2 id="starten-der-anwendung-und-des-telegrambots">starten der anwendung und des telegrambots</h2>
+    <pre><code>  $ npm start</code></pre>
+    <ul>
+      <li>du kannst deinen bot bei telegram mit <strong>/start</strong> aufrufen</li>
+    </ul>
+    <h1 id="wip---docu">WIP - Docu</h1>
+    <pre><code>- pug & gulp (build)
+- i18n
+- firebase, firebase init & deploy
+- telegram api
+- telegraf botframework</code></pre>
+  </und>
+  <hr/>
+  <hr/>
+  <hr/>
+  <footer id="footer">
+    <p>Copyright (c) </p>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  </footer>
+</body>
+<script>(function() {
+  console.log('This is coffee script');
+
+}).call(this);
+
+</script>

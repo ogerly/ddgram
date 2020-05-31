@@ -1,3 +1,6 @@
+<!-- extends layout.pug -->
+ 
+<!-- block content -->
 # ddgram [WIP] - Dieses Projekt dient zu lernzwecken - Nutzung auf eingene Gefahr !
 ### telegramBot + Webapp + Hosting + Database
     node(express, pug, gulp, i18n, telegram(api), telegraf(botframework), firebase(hosting, database))
@@ -76,7 +79,7 @@ trage nun FIREBASE_APIKEY, IREBASE_AUTH_DOMAIN , FIREBASE_DATABASE_URL, FIREBASE
  - du kannst deinen bot bei telegram mit **/start** aufrufen
  
  
- # in kürze mehr über:
+ # WIP - Docu
 
     - pug & gulp (build)
     - i18n

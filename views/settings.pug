@@ -1,11 +1,11 @@
 include includes/head.pug
 title !{title}
-body
+body.container
   include includes/navbar.pug 
-  div.container Einstellungen
+  div Einstellungen
     ul.list-group
     li.list-group-item.active Kanäle
-    - var values= {anyArray}
+    - var values= anyArray
       each item in values
         li.list-group-item= item
       else
@@ -13,11 +13,10 @@ body
 
     ul.list-group
     li.list-group-item.active Gruppen
-    - var values= {anyGroupArray}
+    - var values= anyGroupArray
     each item in values
       li.list-group-item= item
     else
       li Keine Gruppen gespeichert
 
-  include includes/footer.pug 
-
+  include includes/footer.pug

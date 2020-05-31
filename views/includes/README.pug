@@ -1,0 +1,84 @@
+//  extends layout.pug 
+//  block content 
+html
+	head
+	body
+		h1#ddgram-wip---dieses-projekt-dient-zu-lernzwecken---nutzung-auf-eingene-gefahr- ddgram [WIP] - Dieses Projekt dient zu lernzwecken - Nutzung auf eingene Gefahr !
+		h3#telegrambot--webapp--hosting--database telegramBot + Webapp + Hosting + Database
+		pre
+			code node(express, pug, gulp, i18n, telegram(api), telegraf(botframework), firebase(hosting, database))
+		h3#nodeexpresspugi18ngulp node,express,pug,i18n,gulp
+		p eine schnelle anwendung. wichtig ist das zusammenspiel der technik und systeme. - schnelle einfaches handling über telegram, datendarstellung per webapp. - bot steuerung für admin von gruppen und kanälen - bot steuerung für informationssuchende - datendarstellung für themenbezogenen oder localen informationen.
+		h3#telegrambot TelegramBot
+		pre
+			code.
+				- bot login
+				- bot commands
+				- data admin, user speichern
+				- data admin, user verwalten
+		h3#webapp Webapp
+		pre
+			code.
+				- login per telegram
+				- daten verwalten
+				- daten speichern
+		h2#install Install
+		pre
+			code.
+				$ git clone https://github.com/ogerly/ddgram.git
+				$ cd <neuer projectordner>
+				$ npm install
+		h3#env .env
+		p lege im root-verzeichnis eine datei an '.env'
+		pre
+			code.
+				NODE_ENV=development
+				PORT= 3000
+				
+				BOT_NAME= <Name deines Telegrambots - ohne @>
+				BOT_TOKEN = <dein Telegram Bot Token>
+				
+				FIREBASE_APIKEY = < Firebase ApiKey >
+				FIREBASE_AUTH_DOMAIN = https://< Firebase projectid >.firebaseapp.com/
+				FIREBASE_DATABASE_URL = https://< Firebase projectid >.firebaseapp.com/
+				FIREBASE_PROJECT_ID = < Firebase projectid >
+				FIREBASE_STORAGE_BUCKET = < Firebase projectid >.appspot.com
+				FIREBASE_MESSANGER_ID = < Firebase Messanger id >
+		h3#telegram-bot-anlegen Telegram Bot anlegen
+		p
+			| Stellen Sie über den Link eine Verbindung zum @BotFather her: 
+			a(href='https://telegram.me/BotFather') https://telegram.me/BotFather
+			| . Wenn das Chat-Fenster mit dem Bot im Telegramm geöffnet ist, drücken Sie die Taste Start.
+
+			strong /newbot
+			| 
+und folge den anweisungen, am ende bekommst du den BOT_TOKEN
+		p
+			| trage nun BOT_TOKEN und BOT_NAME in die 
+			strong .env
+			|  datei.
+		h3#firebase-hosting-und-database-anlegen Firebase Hosting und Database anlegen
+		p
+			| auf der console bei firebase 
+			a(href='https://console.firebase.google.com/') https://console.firebase.google.com/
+		ul
+			li lege ein neues Projekt an
+			li lege eine neue database an
+			li lege ein neues hosting an
+		p trage nun FIREBASE_APIKEY, IREBASE_AUTH_DOMAIN , FIREBASE_DATABASE_URL, FIREBASE_PROJECT_ID, FIREBASE_STORAGE_BUCKET, FIREBASE_MESSANGER_ID ein.
+		h2#starten-der-anwendung-und-des-telegrambots starten der anwendung und des telegrambots
+		pre
+			code   $ npm start
+		ul
+			li
+				| du kannst deinen bot bei telegram mit 
+				strong /start
+				|  aufrufen
+		h1#wip---docu WIP - Docu
+		pre
+			code.
+				- pug & gulp (build)
+				- i18n
+				- firebase, firebase init & deploy
+				- telegram api
+				- telegraf botframework

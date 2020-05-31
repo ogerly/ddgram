@@ -1,0 +1,14 @@
+include includes/head.pug
+title !{title}
+body.container
+  include includes/navbar.pug 
+  h3 !{title}
+  hr
+  include includes/README.pug
+  hr
+  hr
+  hr
+  include includes/footer.pug
+script
+  :coffee-script
+    console.log 'This is coffee script'
