@@ -5,7 +5,7 @@
 
 
 ### node,express,pug,i18n,gulp
-eine schnelle anwendung. wichtig ist das zusammenspiel der technik und systeme. 
+eine schnelle anwendung. wichtig ist das zusammenspiel der technik und system. 
      - schnelle einfaches handling über telegram, datendarstellung per webapp. 
      - bot steuerung für admin von gruppen und kanälen
      - bot steuerung für informationssuchende
